@@ -80,6 +80,8 @@
               this.writePixel(4 * ((walker.x + 2) % canvas.width + ((walker.y + 1) % canvas.height * canvas.width)), walker.color);
               this.writePixel(4 * ((walker.x + 1) % canvas.width + (walker.y % canvas.height * canvas.width)), walker.color);
               this.writePixel(4 * ((walker.x + 1) % canvas.width + ((walker.y + 2) % canvas.height * canvas.width)), walker.color);
+            this.writePixel(4 * ((walker.x + 1) % canvas.width + ((walker.y + 1) % canvas.height * canvas.width)), walker.color);
+                
           },
           drawFrame: function() {
               this.imageData = this.context.getImageData(0, 0, canvas.width, canvas.height);
